@@ -21,6 +21,7 @@ public class BookController {
 
     private final BookServices bookServices;
     private final BookMapper bookMapper;
+
     @GetMapping("/all")
     @Operation(summary = "Finds all books")
     public List<BookVO> findAll() {
