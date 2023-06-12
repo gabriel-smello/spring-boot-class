@@ -34,13 +34,13 @@ public class BookController {
         return bookMapper.entity2BookVO(bookServices.findById(id));
     }
 
-    @PostMapping(value = "/")
+    @PostMapping(value = "")
     @Operation(summary = "Create a new book")
     public BookVO create(@RequestBody Book book) {
         return bookMapper.entity2BookVO(bookServices.create(book));
     }
 
-    @PutMapping(value = "/")
+    @PutMapping(value = "")
     @Operation(summary = "Update a book")
     public BookVO update(@RequestBody Book book) {
         return bookMapper.entity2BookVO(bookServices.update(book));
